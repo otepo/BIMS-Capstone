@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+aside i {
+    font-size: 25px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 125px;
+    height: 125px;
+}
+
+#officials-about .ofcl {
+    transition: transform 0.9;
+}
+
+#officials-about .ofcl:hover {
+    transform: scale(1.01);
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero {
+    background: url("../images/hero3.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+#hero > nav {
+    z-index: 1;
+}
+
+#hero > div {
+    z-index: 1;
+}
+
+.active {
+    background-color: gray;
+}
+#hero-about {
+    background: url("../images/seal2.png") no-repeat center center/cover;
+    background-size: 550px;
+    background-attachment: fixed;
+    /* z-index: 999; */
+    position: relative;
+}
+
+#modal-body {
+    background: url("../images/seal2.png") no-repeat center center/cover;
+    background-size: 150px;
+    /* background-attachment: fixed; */
+    z-index: 999;
+    position: relative;
+}
+
+#modal-id img {
+    width: 30px;
+}
+
+#modal-info {
+    width: 70%;
+}
+
+#modal-img {
+    width: 30%;
+    object-fit: cover;
+}
+@media (max-width: 640px) {
+    #admin-footer {
+        margin: auto;
+    }
+
+    #admin-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
